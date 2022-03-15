@@ -15,12 +15,11 @@ int main(void)
 		next = a + b;
 		a = b;
 		b = next;
-		printf("%ld", a);
+		printf("%ld, ", a);
 
-		if (i < 97)
+		if (i == 97)
 		{
 			printf("%ld\n", a);
 		}
 	}
-	return (0);
 }
