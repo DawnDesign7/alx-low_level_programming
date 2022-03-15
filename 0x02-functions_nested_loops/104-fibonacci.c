@@ -10,16 +10,16 @@ int main(void)
 	int i = 0;
 	long int a = 0, b = 1, next = 0;
 
-	for (i = 1; i < 98; i++)
+	while (i < 98)
 	{
 		next = a + b;
 		a = b;
 		b = next;
-		printf("%ld, ", a);
+		printf("%lu", a);
 
-		if (i == 97)
-		{
-			printf("%ld\n", a);
-		}
+		if (i < 97)
+			printf(", ");
+		i++;
 	}
+	return (0);
 }
