@@ -8,19 +8,19 @@
 int main(void)
 {
 	int i = 0;
-	unsigned long int a = 0, b = 1, next = 0;
+	long int a = 0, b = 1, next = 0;
 
-	while (i < 98)
+	for (i = 1; i < 98; i++)
 	{
 		next = a + b;
 		a = b;
 		b = next;
-		printf("%lu", next);
+		printf("%ld", a);
 
-		if (i == 97)
-			printf(", ");
-		i++;
+		if (i < 97)
+		{
+			printf("%ld\n", a);
+		}
 	}
-	putchar('\n');
 	return (0);
 }
