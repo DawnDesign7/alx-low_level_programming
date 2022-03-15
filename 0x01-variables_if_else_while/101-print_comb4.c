@@ -2,7 +2,7 @@
 /**
  * main - program that prints all possible different
  * combinations of these digits.
- * 
+ *
  * Return: 0
  */
 int main(void)
